@@ -18,7 +18,7 @@ if (isset($_POST['tambah'])) {
 ?>
 
 <link rel="stylesheet" href="../css/tambah.css">
-<h3>Form Tambah Data GamingGear</h3>
+<h3>Form Tambah Data Jamtangan</h3>
 <form action="" method="POST">
   <div class="container">
     <ul>
