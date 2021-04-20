@@ -7,7 +7,7 @@ if (!isset($_GET['id'])) {
 require 'functions.php';
 
 $id = $_GET['id'];
-$gr = query("SELECT * FROM gaminggear WHERE id = $id")[0];
+$gr = query("SELECT * FROM jamtangan WHERE id = $id")[0];
 
 ?>
 

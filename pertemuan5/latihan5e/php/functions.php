@@ -17,7 +17,7 @@ function tambah($data)
     $harga = htmlspecialchars($data['harga']);
     $type = htmlspecialchars($data['type']);
 
-    $query = "INSERT INTO gaminggear
+    $query = "INSERT INTO Jam Tangan
                     VALUES
                     ('','$nama','$deskripsi','$harga','$type','$gambar')";
     mysqli_query($conn, $query);

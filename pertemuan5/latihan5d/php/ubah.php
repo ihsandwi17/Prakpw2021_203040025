@@ -44,7 +44,7 @@ if (isset($_POST['ubah'])) {
       <li>
         <label for="tipe">Type </label><br>
         <select name="tipe" id="tipe" required value="<?= $gr['tipe']; ?>">
-          <option value="">----------Type GamingGear----------</option>
+          <option value="">----------Type Jamtangan----------</option>
           <option value="pria">pria</option>
           <option value="wanita">wanita</option>
           <option value="allmode">alltype</option>
