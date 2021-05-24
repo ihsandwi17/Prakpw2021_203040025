@@ -7,9 +7,7 @@ Pertemuan 7 - 02 Maret 2021
 Mempelajari mengenai sintaks PHP tentang get and post
 */
 ?>
-<?php
-// (2) POST
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

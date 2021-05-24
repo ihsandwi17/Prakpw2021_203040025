@@ -3,15 +3,21 @@
 Nur Ihsan Dwi 
 203040025
 https://github.com/ihsandwi17/pw2021_203040025
-Pertemuan 10 - 28 April 2021
-Mempelajari Koneksi DB dan Insert Data
+Pertemuan 12 - 14 Mei 2021
+Mempelajari Login & Registrasi
 */
+
+session_start();
+
+if(!isset($_SESSION['login'])) {
+    header("Location: login.php");
+    exit;
+}
 
 // mengecek apakah ada id yang dikirimkan
 // jika tidak maka akan dikembalikan ke halaman index.php
-
 if(!isset($_GET["id"])) {
-    header("location:../index3.php");
+    header("location:../index.php");
 }
 
 require "functions.php";
@@ -40,8 +46,8 @@ $mahasiswa = query("SELECT * FROM mahasiswa WHERE id = $id")[0];
         <li>nama: <?= $mahasiswa["nama"]; ?></li>
         <li>email: <?= $mahasiswa["email"]; ?></li>
         <li>jurusan: <?= $mahasiswa["jurusan"]; ?></li>
-        <li><a href="">ubah</a> | <a href="">hapus</a></li>
-        <li><a href="latihan3.php">Kembali ke daftar mahasiswa</a></li>
+        <li><a href="ubah.php?id=<?= $mahasiswa['id']; ?>">ubah</a> | <a href="hapus.php?id=<?= $mahasiswa['id']; ?>" onclick="return confirm('Hapus Data?')">hapus</a>
+        <li><a href="index.php">Kembali ke daftar mahasiswa</a></li>
     </ul>
 </body>
 </html>

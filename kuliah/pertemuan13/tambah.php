@@ -1,17 +1,23 @@
 <?php 
-require 'function.php';
+session_start();
+
+if(!isset($_SESSION['login'])) {
+    header("Location: login.php");
+    exit;
+}
+require 'functions.php';
 
 // cek apakh tombol tambah sudah ditekan
 if(isset($_POST['tambah'])) {
     if(tambah($_POST) > 0) {
         echo "<script>
             alert('Data Berhasil Ditambahkan');
-            document.location.href = 'latihan3.php';
+            document.location.href = 'index.php';
         </script>";
     }else{
         echo "<script>
             alert('Data Gagal Ditambahkan');
-            document.location.href = 'latihan3.php';
+            document.location.href = 'index.php';
         </script>";
     }
 }

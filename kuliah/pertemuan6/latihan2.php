@@ -11,14 +11,12 @@ Mempelajari mengenai sintaks PHP tentang Array Associative
 <?php
 /*
 $mahasiswa = [
-    ["Nur Ihsan Dwi ", "203040025",
- "203040025@mail.unpas.ac.id", "Teknik Informatika"],
-    ["Doddy ferdiansyah", "033040001",
- "doddy0@gmail.com", "Teknik Industri"]
+    ["Nur Ihsan Dwi ", "203040025", "203040025@mail.unpas.ac.id", "Teknik Informatika"],
+    ["Doddy ferdiansyah", "033040001","doddy0@gmail.com", "Teknik Informatika"]
 ];
 */
 // Array Associative
-// Definisinya sama seperti array numerik, kecuali
+// Definisinya sama seperti array numeric
 // key-nya adalah string yang kita buat sendiri
 $mahasiswa = [
     [
@@ -26,41 +24,16 @@ $mahasiswa = [
         "nrp" => "203040025",
         "email" => "203040025@mail.unpas.ac.id",
         "jurusan" => "Teknik Informatika",
-        "gambar" => 
+        "gambar" => 'images.png'
     ],
     [
-        "nama" => "ujang mamat", 
-        "nrp" => "033040001",
-        "email" => "ujang2123@gmail.com",
-        "jurusan" => "Teknik Industri",
-        "tugas" => [90, 88, 100],
-        "gambar" => "images.png"
-    ],
-    [
-        "nama" => "febrian agus", 
-        "nrp" => "19902001",
-        "email" => "agusq@gmail.com",
-        "jurusan" => "Teknik Mesin",
-        "tugas" => [90, 88, 100],
-        "gambar" => "images.png"
-    ],
-    [
-        "nama" => "ade nana", 
-        "nrp" => "188090021",
-        "email" => "nana321@gmail.com",
-        "jurusan" => "Teknik elektro",
-        "tugas" => [98, 88, 90],
-        "gambar" => "images.png"
-    ],
-    [
-        "nama" => "Sila putri", 
-        "nrp" => "177040021",
-        "email" => "putri@gmail.com",
-        "jurusan" => "Teknik PWK",
-        "tugas" => [92, 84, 87],
-        "gambar" => "images.png"
+        "nama" => "Doddy Ferdiansyah", 
+        "nrp" => "033040001", 
+        "email" => "doddy@yahoo.com",
+        "jurusan" => "Teknik Informatika"
     ]
 ];
+  
 // echo $mahasiswa[1]["email"];
 // echo $mahasiswa[1]["jurusan"];
 // echo $mahasiswa[1]["tugas"][1];
